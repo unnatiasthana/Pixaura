@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - Pixaura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+        <div class="app-title">Pixaura</div>
+        <div class="header-icons">
+            <button class="header-btn header-message-icon" aria-label="Messages" title="Messages">💬</button>
+             <button class="header-btn header-heart-icon" aria-label="Notifications" title="Notifications"><a href="notifications.html">❤️</a></button>
+        </div>
+    </header>
+
+    <div class="message-popup" aria-hidden="true">
+        <div class="popup-content">
+            <h3>Messages</h3>
+            <div class="popup-messages">
+                <div class="popup-message-item">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop" alt="Emma" loading="lazy">
+                    <div>
+                        <p class="popup-name">Emma</p>
+                        <p class="msg-preview">That sounds amazing!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification-popup" aria-hidden="true">
+        <div class="popup-content">
+            <h3>Notifications</h3>
+            <div class="popup-notifications">
+                <div class="popup-notif-item">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop" alt="Emma" loading="lazy">
+                    <p><strong>Emma</strong> liked your post</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="left-sidebar">
+            <nav class="sidebar-nav" aria-label="Main navigation">
+                <a href="index.html" class="nav-item" title="Home" aria-label="Home">
+                    <span class="icon" aria-hidden="true">🏠</span>
+                </a>
+                <a href="explore.html" class="nav-item" title="Explore" aria-label="Explore">
+                    <span class="icon" aria-hidden="true">🔍</span>
+                </a>
+                <a href="messages.html" class="nav-item nav-item--active" title="Messages" aria-label="Messages">
+                    <span class="icon" aria-hidden="true">💬</span>
+                </a>
+                <a href="notifications.html" class="nav-item" title="Notifications" aria-label="Notifications">
+                    <span class="icon" aria-hidden="true">🔔</span>
+                </a>
+                <a href="profile.html" class="nav-item" title="Profile" aria-label="Profile">
+                    <span class="icon" aria-hidden="true">👤</span>
+                </a>
+            </nav>
+            <button class="btn btn--primary btn--small create-post-btn" aria-label="Create new post" title="Create post">➕</button>
+        </aside>
+
+        <!-- Messages List -->
+        <main class="messages-container">
+            <div class="messages-header">
+                <h1>Messages</h1>
+                <input type="text" class="messages-search" placeholder="Search conversations..." aria-label="Search conversations">
+            </div>
+
+            <!-- Conversation Item 1 -->
+            <div class="conversation-item active" role="button" tabindex="0">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50&h=50&fit=crop" alt="Emma" class="conv-avatar" loading="lazy">
+                <div class="conv-info">
+                    <h3>Emma</h3>
+                    <p>That sounds amazing! When are we going...</p>
+                </div>
+                <span class="conv-time">2m</span>
+            </div>
+
+            <!-- Conversation Item 2 -->
+            <div class="conversation-item" role="button" tabindex="0">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop" alt="James" class="conv-avatar" loading="lazy">
+                <div class="conv-info">
+                    <h3>James</h3>
+                    <p>Thanks for the recommendation!</p>
+                </div>
+                <span class="conv-time">1h</span>
+            </div>
+
+            <!-- Conversation Item 3 -->
+            <div class="conversation-item" role="button" tabindex="0">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop" alt="Lisa" class="conv-avatar" loading="lazy">
+                <div class="conv-info">
+                    <h3>Lisa</h3>
+                    <p>See you at the yoga class!</p>
+                </div>
+                <span class="conv-time">3h</span>
+            </div>
+
+            <!-- Conversation Item 4 -->
+            <div class="conversation-item" role="button" tabindex="0">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=50&h=50&fit=crop" alt="David" class="conv-avatar" loading="lazy">
+                <div class="conv-info">
+                    <h3>David</h3>
+                    <p>Let's grab coffee sometime!</p>
+                </div>
+                <span class="conv-time">1d</span>
+            </div>
+
+            <!-- Conversation Item 5 -->
+            <div class="conversation-item" role="button" tabindex="0">
+                <img src="https://images.unsplash.com/photo-1517256673193-36269335336b?w=50&h=50&fit=crop" alt="Sophie" class="conv-avatar" loading="lazy">
+                <div class="conv-info">
+                    <h3>Sophie</h3>
+                    <p>Love the new photos!</p>
+                </div>
+                <span class="conv-time">2d</span>
+            </div>
+        </main>
+
+        <!-- Chat Area -->
+        <aside class="chat-area">
+            <div class="chat-header">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop" alt="Emma" class="chat-avatar" loading="lazy">
+                <div>
+                    <h2>Emma</h2>
+                    <p class="chat-status">Online</p>
+                </div>
+            </div>
+
+            <div class="chat-messages">
+                <div class="message received">
+                    <p>Hey! How are you doing?</p>
+                    <span class="message-time">2:30 PM</span>
+                </div>
+                <div class="message sent">
+                    <p>Hey Emma! I'm doing great, thanks for asking!</p>
+                    <span class="message-time">2:35 PM</span>
+                </div>
+                <div class="message received">
+                    <p>That sounds amazing! When are we going?</p>
+                    <span class="message-time">2:36 PM</span>
+                </div>
+                <div class="message sent">
+                    <p>How about this weekend?</p>
+                    <span class="message-time">2:37 PM</span>
+                </div>
+            </div>
+
+            <div class="chat-input">
+                <input type="text" placeholder="Type a message..." aria-label="Message input">
+                <button class="btn btn--primary btn--small">Send</button>
+            </div>
+        </aside>
+
+       
+    </div>
+</body>
+</html>

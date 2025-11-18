@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Pixaura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+        <div class="app-title">Pixaura</div>
+        <div class="header-icons">
+            <button class="header-btn header-heart-icon" aria-label="Notifications" title="Notifications"><a href="messages.html">💬</a></button>
+             <button class="header-btn header-heart-icon" aria-label="Notifications" title="Notifications"><a href="notifications.html">❤️</a></button>
+        </div>
+    </header>
+
+    <div class="message-popup" aria-hidden="true">
+        <div class="popup-content">
+            <h3>Messages</h3>
+            <div class="popup-messages">
+                <div class="popup-message-item">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop" alt="Emma" loading="lazy">
+                    <div>
+                        <p class="popup-name">Emma</p>
+                        <p class="msg-preview">That sounds amazing!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification-popup" aria-hidden="true">
+        <div class="popup-content">
+            <h3>Notifications</h3>
+            <div class="popup-notifications">
+                <div class="popup-notif-item">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop" alt="Emma" loading="lazy">
+                    <p><strong>Emma</strong> liked your post</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="left-sidebar">
+            <nav class="sidebar-nav" aria-label="Main navigation">
+                <a href="index.html" class="nav-item" title="Home" aria-label="Home">
+                    <span class="icon" aria-hidden="true">🏠</span>
+                </a>
+                <a href="explore.html" class="nav-item" title="Explore" aria-label="Explore">
+                    <span class="icon" aria-hidden="true">🔍</span>
+                </a>
+                <a href="messages.html" class="nav-item" title="Messages" aria-label="Messages">
+                    <span class="icon" aria-hidden="true">💬</span>
+                </a>
+                <a href="notifications.html" class="nav-item" title="Notifications" aria-label="Notifications">
+                    <span class="icon" aria-hidden="true">🔔</span>
+                </a>
+                <a href="profile.html" class="nav-item nav-item--active" title="Profile" aria-label="Profile">
+                    <span class="icon" aria-hidden="true">👤</span>
+                </a>
+            </nav>
+            <button class="btn btn--primary btn--small create-post-btn" aria-label="Create new post" title="Create post">➕</button>
+        </aside>
+
+        <!-- Main Feed -->
+        <main class="main-feed profile-feed">
+            <!-- Profile Header -->
+            <div class="profile-header">
+                <div class="profile-cover">
+                    <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?w=800&h=200&fit=crop" alt="Cover Photo" class="cover-photo" loading="lazy">
+                </div>
+                <div class="profile-info">
+                    <img src="profile.jpg" alt="Sarah Chen" class="profile-avatar" loading="lazy">
+                    <div class="profile-details">
+                        <h1>unnati</h1>
+                        <p class="profile-handle">@unnatea</p>
+                        <p class="profile-bio">Adventure seeker, nature lover, and coffee enthusiast ☕🌲</p>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <strong>6</strong>
+                                <span>Posts</span>
+                            </div>
+                            <div class="stat">
+                                <strong>3.2K</strong>
+                                <span>Followers</span>
+                            </div>
+                            <div class="stat">
+                                <strong>200</strong>
+                                <span>Following</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn--primary">Edit Profile</button>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="profile-tabs" role="tablist" aria-label="Profile sections">
+                <button class="tab-btn active" role="tab" aria-selected="true">Posts</button>
+                <button class="tab-btn" role="tab" aria-selected="false">Likes</button>
+                <button class="tab-btn" role="tab" aria-selected="false">Saved</button>
+            </div>
+
+            <!-- User Posts Grid -->
+            <div class="posts-grid">
+                <article class="grid-post">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=300&fit=crop" alt="Post" loading="lazy">
+                    <div class="grid-post-overlay">
+                        <span>❤️ 245</span>
+                    </div>
+                </article>
+                <article class="grid-post">
+                    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=300&fit=crop" alt="Post" loading="lazy">
+                    <div class="grid-post-overlay">
+                        <span>❤️ 189</span>
+                    </div>
+                </article>
+                <article class="grid-post">
+                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=300&h=300&fit=crop" alt="Post" loading="lazy">
+                    <div class="grid-post-overlay">
+                        <span>❤️ 432</span>
+                    </div>
+                </article>
+                <article class="grid-post">
+                    <img src="https://images.unsplash.com/photo-1493514789014-586cb221b963?w=300&h=300&fit=crop" alt="Post" loading="lazy">
+                    <div class="grid-post-overlay">
+                        <span>❤️ 156</span>
+                    </div>
+                </article>
+                <article class="grid-post">
+                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=300&h=300&fit=crop" alt="Post" loading="lazy">
+                    <div class="grid-post-overlay">
+                        <span>❤️ 278</span>
+                    </div>
+                </article>
+                <article class="grid-post">
+                    <img src="https://images.unsplash.com/photo-1495195134817-aeb325a55b65?w=300&h=300&fit=crop" alt="Post" loading="lazy">
+                    <div class="grid-post-overlay">
+                        <span>❤️ 312</span>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <div class="search-bar">
+                <input type="text" placeholder="Search people, posts..." aria-label="Search" class="search-input">
+            </div>
+
+            <section class="suggestions-section" aria-label="Suggestions">
+                <h2 class="suggestions-title">Suggestions</h2>
+                <div class="suggestion-item">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop" alt="Emma" loading="lazy">
+                    <div class="suggestion-info">
+                        <p class="suggestion-name">Emma</p>
+                        <p class="suggestion-handle">@emma</p>
+                    </div>
+                    <button class="btn btn--primary btn--small">Follow</button>
+                </div>
+                <div class="suggestion-item">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop" alt="James" loading="lazy">
+                    <div class="suggestion-info">
+                        <p class="suggestion-name">James</p>
+                        <p class="suggestion-handle">@james</p>
+                    </div>
+                    <button class="btn btn--primary btn--small">Follow</button>
+                </div>
+                <div class="suggestion-item">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=40&h=40&fit=crop" alt="Lisa" loading="lazy">
+                    <div class="suggestion-info">
+                        <p class="suggestion-name">Lisa</p>
+                        <p class="suggestion-handle">@lisa</p>
+                    </div>
+                    <button class="btn btn--primary btn--small">Follow</button>
+                </div>
+            </section>
+
+            <section class="kind-word-panel" aria-label="Kind words">
+                <div class="kw-header">
+                    <h2 class="kw-title">Kind Words</h2>
+                    <button class="kw-refresh" aria-label="Refresh kind word" title="Get new word">🔄</button>
+                </div>
+                <div class="kind-word-card">
+                    <p class="kind-word-text">Mindful</p>
+                    <p class="kind-word-desc">Living in the moment</p>
+                </div>
+                <div class="kw-actions">
+                    <input type="text" class="kw-input" placeholder="Share a kind word..." aria-label="Share kind word">
+                    <button class="btn btn--primary btn--small">✎</button>
+                </div>
+            </section>
+
+            <section class="events-section" aria-label="Local events">
+                <h2 class="events-title">Gather - Local Events</h2>
+                <div class="event">
+                    <p class="event-name">Community Meditation</p>
+                    <p class="event-location">Central Park, NYC</p>
+                    <p class="event-details">Tomorrow, 6 PM • 24 going</p>
+                </div>
+                <div class="event">
+                    <p class="event-name">Art Workshop</p>
+                    <p class="event-location">Downtown Gallery</p>
+                    <p class="event-details">Sunday, 2 PM • 18 going</p>
+                </div>
+                <button class="btn btn--primary">Browse All Events</button>
+            </section>
+        </aside>
+    </div>
+</body>
+</html>

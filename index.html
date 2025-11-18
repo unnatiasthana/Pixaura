@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixaura - Spread Kindness, Share Moments</title>
+    <!-- Added Google Fonts import for Inter typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Updated header with refined dark mode styling -->
+    <header class="top-nav">
+        <div class="app-title">Pixaura</div>
+        <div class="header-icons">
+            <button class="header-btn header-message-icon" aria-label="Messages" title="Messages">💬</button>
+            <button class="header-btn header-heart-icon" aria-label="Notifications" title="Notifications"><a href="notifications.html">❤️</a></button>
+        </div>
+    </header>
+
+    <!-- Message Popup Container -->
+    <div class="message-popup" aria-hidden="true">
+        <!-- message popup hook: .header-message-icon -->
+        <div class="popup-content">
+            <h3>Messages</h3>
+            <div class="popup-messages">
+                <div class="popup-message-item">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop" alt="Emma" loading="lazy">
+                    <div>
+                        <p class="popup-name">Emma</p>
+                        <p class="msg-preview">That sounds amazing!</p>
+                    </div>
+                </div>
+                <div class="popup-message-item">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop" alt="James" loading="lazy">
+                    <div>
+                        <p class="popup-name">James</p>
+                        <p class="msg-preview">Thanks for the recommendation!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Popup Container -->
+    <div class="notification-popup" aria-hidden="true">
+        <!-- notification popup hook: .header-heart-icon -->
+        <div class="popup-content">
+            <h3>Notifications</h3>
+            <div class="popup-notifications">
+                <div class="popup-notif-item">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop" alt="Emma" loading="lazy">
+                    <p><strong>Emma</strong> liked your post</p>
+                </div>
+                <div class="popup-notif-item">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop" alt="James" loading="lazy">
+                    <p><strong>James</strong> started following you</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Left Sidebar (Compact) -->
+        <aside class="left-sidebar">
+            <!-- Refined navigation with semantic nav element -->
+            <nav class="sidebar-nav" aria-label="Main navigation">
+                <a href="index.html" class="nav-item nav-item--active" title="Home" aria-label="Home">
+                    <span class="icon" aria-hidden="true">🏠</span>
+                </a>
+                <a href="explore.html" class="nav-item" title="Explore" aria-label="Explore">
+                    <span class="icon" aria-hidden="true">🔍</span>
+                </a>
+                <a href="messages.html" class="nav-item" title="Messages" aria-label="Messages">
+                    <span class="icon" aria-hidden="true">💬</span>
+                </a>
+                <a href="notifications.html" class="nav-item" title="Notifications" aria-label="Notifications">
+                    <span class="icon" aria-hidden="true">🔔</span>
+                </a>
+                <a href="profile.html" class="nav-item" title="Profile" aria-label="Profile">
+                    <span class="icon" aria-hidden="true">👤</span>
+                </a>
+            </nav>
+
+            <button class="btn btn--primary btn--small create-post-btn" aria-label="Create new post" title="Create post">➕</button>
+        </aside>
+
+        <!-- Main Feed -->
+        <main class="main-feed">
+            <!-- Stories Section -->
+            <section class="stories-section" aria-label="Stories">
+                <div class="story">
+                    <div class="story-avatar">
+                        <span class="story-plus" aria-hidden="true">+</span>
+                    </div>
+                    <p>Your St...</p>
+                </div>
+                <div class="story">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop" alt="Emma's story" loading="lazy">
+                    <p>Emma</p>
+                </div>
+                <div class="story">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop" alt="James's story" loading="lazy">
+                    <p>James</p>
+                </div>
+                <div class="story">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop" alt="Lisa's story" loading="lazy">
+                    <p>Lisa</p>
+                </div>
+                <div class="story">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop" alt="David's story" loading="lazy">
+                    <p>David</p>
+                </div>
+                <div class="story">
+                    <img src="https://images.unsplash.com/photo-1517256673193-36269335336b?w=80&h=80&fit=crop" alt="Sophie's story" loading="lazy">
+                    <p>Sophie</p>
+                </div>
+            </section>
+
+            <!-- Post Composer -->
+            <div class="post-composer">
+                <textarea placeholder="What's on your mind?" aria-label="Write a new post"></textarea>
+                <div class="composer-buttons">
+                    <button class="btn btn--outline">Cancel</button>
+                    <button class="btn btn--primary">Post</button>
+                </div>
+            </div>
+
+            <!-- Sample Post 1 -->
+            <article class="post">
+                <div class="post-header">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop" alt="Sarah Chen" class="post-avatar" loading="lazy">
+                    <div class="post-info">
+                        <h3 class="post-author">Sarah Chen</h3>
+                        <p class="post-handle">@sarahchen</p>
+                        <p class="post-time">2 hours ago</p>
+                    </div>
+                    <button class="post-menu" aria-label="Post options" title="More options">⋯</button>
+                </div>
+                <p class="post-text">Just finished a beautiful hiking trail and feeling so connected to nature! 🌲</p>
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" alt="Beautiful hiking trail" class="post-image" loading="lazy">
+            </article>
+
+            <!-- Sample Post 2 -->
+            <article class="post">
+                <div class="post-header">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop" alt="James Wilson" class="post-avatar" loading="lazy">
+                    <div class="post-info">
+                        <h3 class="post-author">James Wilson</h3>
+                        <p class="post-handle">@jameswilson</p>
+                        <p class="post-time">4 hours ago</p>
+                    </div>
+                    <button class="post-menu" aria-label="Post options" title="More options">⋯</button>
+                </div>
+                <p class="post-text">Coffee and a good book - the perfect Sunday morning combo ☕📚</p>
+                <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&h=400&fit=crop" alt="Coffee and book" class="post-image" loading="lazy">
+            </article>
+
+            <!-- Sample Post 3 -->
+            <article class="post">
+                <div class="post-header">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=40&h=40&fit=crop" alt="Lisa Anderson" class="post-avatar" loading="lazy">
+                    <div class="post-info">
+                        <h3 class="post-author">Lisa Anderson</h3>
+                        <p class="post-handle">@lisaanderson</p>
+                        <p class="post-time">6 hours ago</p>
+                    </div>
+                    <button class="post-menu" aria-label="Post options" title="More options">⋯</button>
+                </div>
+                <p class="post-text">Just finished an amazing yoga session! Feeling balanced and peaceful 🧘‍♀️✨</p>
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&h=400&fit=crop" alt="Yoga session" class="post-image" loading="lazy">
+            </article>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search people, posts..." aria-label="Search" class="search-input">
+            </div>
+
+            <!-- Suggestions Section -->
+            <section class="suggestions-section" aria-label="Suggestions">
+                <h2 class="suggestions-title">Suggestions</h2>
+                <div class="suggestion-item">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop" alt="Emma" loading="lazy">
+                    <div class="suggestion-info">
+                        <p class="suggestion-name">Emma</p>
+                        <p class="suggestion-handle">@emma</p>
+                    </div>
+                    <button class="btn btn--primary btn--small">Follow</button>
+                </div>
+                <div class="suggestion-item">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop" alt="James" loading="lazy">
+                    <div class="suggestion-info">
+                        <p class="suggestion-name">James</p>
+                        <p class="suggestion-handle">@james</p>
+                    </div>
+                    <button class="btn btn--primary btn--small">Follow</button>
+                </div>
+                <div class="suggestion-item">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=40&h=40&fit=crop" alt="Lisa" loading="lazy">
+                    <div class="suggestion-info">
+                        <p class="suggestion-name">Lisa</p>
+                        <p class="suggestion-handle">@lisa</p>
+                    </div>
+                    <button class="btn btn--primary btn--small">Follow</button>
+                </div>
+            </section>
+
+            <!-- Kind Words Section -->
+            <section class="kind-word-panel" aria-label="Kind words">
+                <div class="kw-header">
+                    <h2 class="kw-title">Kind Words</h2>
+                    <button class="kw-refresh" aria-label="Refresh kind word" title="Get new word">🔄</button>
+                </div>
+                <!-- kind word hook: .kw-refresh -->
+                <div class="kind-word-card">
+                    <p class="kind-word-text">Resilient</p>
+                    <p class="kind-word-desc">Able to recover quickly</p>
+                </div>
+                <div class="kw-actions">
+                    <input type="text" class="kw-input" placeholder="Share a kind word..." aria-label="Share kind word">
+                    <button class="btn btn--primary btn--small">✎</button>
+                </div>
+            </section>
+
+            <!-- Events Section -->
+            <section class="events-section" aria-label="Local events">
+                <h2 class="events-title">Gather - Local Events</h2>
+                <div class="event">
+                    <p class="event-name">Community Meditation</p>
+                    <p class="event-location">Central Park, NYC</p>
+                    <p class="event-details">Tomorrow, 6 PM • 24 going</p>
+                </div>
+                <div class="event">
+                    <p class="event-name">Art Workshop</p>
+                    <p class="event-location">Downtown Gallery</p>
+                    <p class="event-details">Sunday, 2 PM • 18 going</p>
+                </div>
+                <button class="btn btn--primary">Browse All Events</button>
+            </section>
+        </aside>
+    </div>
+</body>
+</html>
