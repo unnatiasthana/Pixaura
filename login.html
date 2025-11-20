@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="post-composer" style="max-width: 400px; margin: 50px auto;">
+        
+        <input type="radio" id="toggle-login" name="auth-toggle" checked>
+        <input type="radio" id="toggle-signup" name="auth-toggle">
+
+        <h2 class="app-title" style="text-align: center; margin-bottom: 1.5rem; font-size: 1.5rem;">PIXAURA</h2>
+
+        <div class="profile-tabs" style="justify-content: center; margin-bottom: 1.5rem;">
+            <label for="toggle-login" class="tab-btn">Login</label>
+            <label for="toggle-signup" class="tab-btn">Sign Up</label>
+        </div>
+
+        <form class="auth-section login-view">
+            <div style="margin-bottom: 1rem;">
+                <p class="kw-title">Email or Username</p>
+                <input type="text" class="search-input" placeholder="Enter your details" required>
+            </div>
+            <div style="margin-bottom: 1.5rem;">
+                <p class="kw-title">Password</p>
+                <input type="password" class="search-input" placeholder="••••••••" required>
+            </div>
+            <button class="btn btn--primary" style="width: 100%;">
+                <a href="index.html" >Log In</a>
+                
+            </button>
+        </form>
+
+        
+
+    </div>
+
+</body>
+</html>
