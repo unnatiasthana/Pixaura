@@ -1,0 +1,27 @@
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.login-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.login-tabs {
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.login-input-group {
+    margin-bottom: 1rem;
+}
+
+.login-input-group-last {
+    margin-bottom: 1.5rem;
+}
+
+.login-btn {
+    width: 100%;
+}

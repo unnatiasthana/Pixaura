@@ -1,0 +1,96 @@
+.notifications-filter {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #2B0F35;
+    border-radius: 12px;
+    border: 1px solid #170519;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.6rem 1.2rem;
+    background-color: transparent;
+    color: #B0B0B0;
+    border: 1px solid #170519;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    font-family: inherit;
+}
+
+.filter-btn:hover {
+    border-color: #F05941;
+    color: #F05941;
+}
+
+.filter-btn.active {
+    background: linear-gradient(135deg, #F05941 0%, #BE3144 100%);
+    color: white;
+    border-color: transparent;
+}
+
+.notification-item {
+    background-color: #2B0F35;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid #170519;
+    transition: all 0.3s;
+}
+
+.notification-item:hover {
+    background-color: #170519;
+    border-color: #F05941;
+}
+
+.notification-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.notification-content {
+    flex: 1;
+}
+
+.notification-content p {
+    font-size: 0.9rem;
+    color: #F7EEF6;
+    margin-bottom: 0.25rem;
+}
+
+.notification-content strong {
+    color: #F05941;
+    font-weight: 700;
+}
+
+.notification-comment {
+    font-size: 0.85rem;
+    color: #B0B0B0;
+    font-style: italic;
+    margin: 0.5rem 0 0.25rem 0;
+}
+
+.notification-time {
+    font-size: 0.8rem;
+    color: #808080;
+}
+
+.notification-thumb {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+    cursor: pointer;
+    border: 1px solid #170519;
+}
